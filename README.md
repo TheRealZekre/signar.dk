@@ -1,2 +1,3 @@
 # signar.dk
 code for my website
+Going to build my website as I learn...
