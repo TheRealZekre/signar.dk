@@ -1,295 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<!--Head-->
-
 <head>
-    <meta charset="utf-8">
-    <title>My Cheatsheet</title>
-    <link href="./styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="./resources/css/style.css">
+  <meta charset="UTF-8">
 </head>
-<!--Body-->
-
 <body>
-    <!-- Header -->
-    <header id="header">
+  <!-- Header -->
+  <header>
+    <div class="content">
+      <a href="index.html" class="desktoplogo">Fotomatic</a>
+      <nav class="desktop">
+        <ul>
+          <li><a href="#">Product detail</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="https://www.instagram.com/">Follow us <img class="icon" src="./resources/images/instagram.png"></a></li>
+        </ul>
+      </nav>
+      <nav class="mobile">
+        <ul>
+          <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
+          <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
+          <li><a href="#" class="button">Join us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <nav id="navigation">
-            <ul id="nav">
-                <li><a href="#table">Table</a></li>
-                <li><a href="#basic">Basic TAGS</a></li>
-                <li><a href="#semantics">Styles and Semantics</a></li>
-                <li><a href="#list">List TAGS</a></li>
-            </ul>
-        </nav>
-        <section class="sub-header">
-            <h1>This is my &lt;H1&gt; in the header</h1>
-            <p>Just wanted to include a &lt;p&gt; just for fun</p>
-        </section>
-    </header>
-    <!-- Table details-->
-    <section class="table-wrapper">
-        <table class="table">
-            <caption id="table" class="caption">Tables TAGS</caption>
-            <thead>
-                <tr>
-                    <th scope="col">TAG</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&lt;table&gt;</td>
-                    <td>table</td>
-                    <td>HTML tables allow web developers to arrange data into rows and columns</td>
-                </tr>
-                <tr>
-                    <td>&lt;th&gt;</td>
-                    <td>table header</td>
-                    <td>Table headers</td>
-                </tr>
-                <tr>
-                    <td>&lt;tr&gt;</td>
-                    <td>table rows</td>
-                    <td>Defines the rows of the tabel</td>
-                </tr>
-                <tr>
-                    <td>&lt;td&gt;</td>
-                    <td>table data</td>
-                    <td>Where you insert the data in the tabel</td>
-                </tr>
-                <tr>
-                    <td>&lt;caption&gt;</td>
-                    <td>caption</td>
-                    <td>Defines a table caption</td>
-                </tr>
-                <tr>
-                    <td>&lt;colgroup&gt;</td>
-                    <td>colgroup</td>
-                    <td>Specifies a group of one or more columns in a table for formatting</td>
-                </tr>
-                <tr>
-                    <td>&lt;col&gt;</td>
-                    <td>col</td>
-                    <td>Specifies column properties for each column within a &lt;colgroup&gt; element</td>
-                </tr>
-                <tr>
-                    <td>&lt;thead&gt;</td>
-                    <td>thead</td>
-                    <td>Groups the header content in a table</td>
-                </tr>
-                <tr>
-                    <td>&lt;tbody&gt;</td>
-                    <td>tbody</td>
-                    <td>Groups the body content in a table</td>
-                </tr>
-                <tr>
-                    <td>&lt;tfoot&gt;</td>
-                    <td>tfoot</td>
-                    <td>Groups the footer content in a table</td>
-                </tr>
-            </tbody>
-        </table>
+  <!-- Main Content -->
+  <div class="main-content">
 
-        <!--Basic TAGS details-->
+    <!-- Sign Up Section -->
+    <div id="sign-up-section" class="banner">
+      <div id="sign-up-cta">
+        <div class="contentcenter">
+          <div class="header">
+            <h2 class="cursive">Instant</h2>
+            <h1 class="striking">FORMAT CAMERA</h1>
+          </div>
+          <div class="email">
+            <span>
+              Email us to request a demo and be in our waiting list for the <strong>Febuary 2017</strong> release!
+            </span>
+            <div class="button">Join the waiting list</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Features Section -->
+    <div id="features-section">
+      <div class="feature">
+        <div class="center">
+          <div class="image-container">
+            <img src="./resources/images/feature-1.png" />
+          </div>
+          <div class="content">
+            <h2>Advanced, automatic, instant</h2>
+            <h3>Shutter speed, apperture and flash output adjust automatically</h3>
+          </div>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="center">
+          <div class="image-container">
+            <img src="./resources/images/feature-2.png" />
+          </div>
+          <div class="content">
+            <h2>Beautifully crafted inside-out</h2>
+            <h3>From the paint outside to the tiny screw inside, Fotomatic is crafted with love and 20-year of expertise</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <table class="table">
-            <caption id="basic" class="caption">Basic TAGS</caption>
-            <thead>
-                <tr>
-                    <th>TAG</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&lt;!DOCTYPE&gt;</td>
-                    <td>Document type</td>
-                    <td>Defines the document type</td>
-                </tr>
-                <tr>
-                    <td>&lt;html&gt;</td>
-                    <td>HTML</td>
-                    <td>Defines an HTML document</td>
-                </tr>
-                <tr>
-                    <td>&lt;head&gt;</td>
-                    <td>Head</td>
-                    <td>Contains metadata/information for the document</td>
-                </tr>
-                <tr>
-                    <td>&lt;title&gt;</td>
-                    <td>Title</td>
-                    <td>Defines a title for the document</td>
-                </tr>
-                <tr>
-                    <td>&lt;body&gt;</td>
-                    <td>Body</td>
-                    <td> Defines the document's body</td>
-                </tr>
-                <tr>
-                    <td>&lt;h1&gt; to &lt;h6&gt;</td>
-                    <td>Headers</td>
-                    <td>Defines HTML headings</td>
-                </tr>
-                <tr>
-                    <td>&lt;p&gt;</td>
-                    <td>Paragraph</td>
-                    <td>Defines a paragraph</td>
-                </tr>
-                <tr>
-                    <td>&lt;br&gt;</td>
-                    <td>break</td>
-                    <td>Inserts a single line break</td>
-                </tr>
-                <tr>
-                    <td>&lt;hr&gt;</td>
-                    <td>Thematic change</td>
-                    <td>Defines a thematic change in the content</td>
-                </tr>
-                <tr>
-                    <td>&lt;!--...--&gt;</td>
-                    <td>Comments</td>
-                    <td>Defines a comment</td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- Filters Section -->
+    <div id="filters-section">
+      <div class="contentcenter">
+        <h2>Over 20+ filters to choose from</h2>
+        <h3>Feed your creativity with 20 different filter designed by our eclectic in-house photographers!</h3>
+      </div>
+      <div class="images-container">
+        <div class="image-container">
+          <img src="./resources/images/filter-1.png" />
+        </div>
+        <div class="image-container">
+          <img src="./resources/images/filter-2.png" />
+        </div>
+        <div class="image-container">
+          <img src="./resources/images/filter-3.png" />
+        </div>
+        <div class="image-container extra">
+          <img src="./resources/images/filter-4.png" />
+        </div>
+      </div>
+    </div>
 
-        <!--Styles and Semantics details-->
+    <!-- Quotes Section -->
+    <div id="quotes-section">
+      <div class="contentcenter">
+        <span class="quote">“It’s truly something that could create a brand new photography Renaissance”</span>
+        <img class="quote-citation" src="./resources/images/photography-logo.png" />
+      </div>
+    </div>
 
-
-        <table class="table">
-            <caption id="semantics" class="caption">Styles and Semantics TAGS</caption>
-            <thead>
-                <tr>
-                    <th>TAG</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&lt;style&gt;</td>
-                    <td>Styles</td>
-                    <td>Defines style information for a document</td>
-                </tr>
-                <tr>
-                    <td>&lt;div&gt;</td>
-                    <td>Div container</td>
-                    <td>Defines a section in a document</td>
-                </tr>
-                <tr>
-                    <td>&lt;span&gt;</td>
-                    <td>Span area</td>
-                    <td>Defines a section in a document</td>
-                </tr>
-                <tr>
-                    <td>&lt;header&gt;</td>
-                    <td>Header section</td>
-                    <td>Defines a header for a document or section</td>
-                </tr>
-                <tr>
-                    <td>&lt;footer&gt;</td>
-                    <td>Footer</td>
-                    <td>Defines a footer for a document or section</td>
-                </tr>
-                <tr>
-                    <td>&lt;main&gt;</td>
-                    <td>Main</td>
-                    <td>Specifies the main content of a document</td>
-                </tr>
-                <tr>
-                    <td>&lt;section&gt;</td>
-                    <td>Section</td>
-                    <td>Defines a section in a document</td>
-                </tr>
-                <tr>
-                    <td>&lt;article&gt;</td>
-                    <td>article</td>
-                    <td>Defines an article</td>
-                </tr>
-                <tr>
-                    <td>&lt;aside&gt;</td>
-                    <td>Aside</td>
-                    <td>Defines content aside from the page content</td>
-                </tr>
-                <tr>
-                    <td>&lt;details&gt;</td>
-                    <td>Details</td>
-                    <td>Defines additional details that the user can view or hide</td>
-                </tr>
-                <tr>
-                    <td>&lt;dialog&gt;</td>
-                    <td>Dialog</td>
-                    <td>Defines a dialog box or window</td>
-                </tr>
-                <tr>
-                    <td>&lt;summary&gt;</td>
-                    <td>Summary</td>
-                    <td>Defines a visible heading for a &lt;details&gt; element</td>
-                </tr>
-                <tr>
-                    <td>&lt;data&gt;</td>
-                    <td>Data</td>
-                    <td>Adds a machine-readable translation of a given content</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!--Lists details-->
-
-
-        <table class="table">
-            <caption id="list" class="caption">List TAGS</caption>
-            <thead>
-                <tr>
-                    <th>TAG</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&lt;ul&gt;</td>
-                    <td>unordered list</td>
-                    <td>Defines an unordered list</td>
-                </tr>
-                <tr>
-                    <td>&lt;ol&gt;</td>
-                    <td>ordered list</td>
-                    <td>Defines an ordered list</td>
-                </tr>
-                <tr>
-                    <td>&lt;li&gt;</td>
-                    <td>li</td>
-                    <td>Defines a list item</td>
-                </tr>
-                <tr>
-                    <td>&lt;dl&gt;</td>
-                    <td>description list</td>
-                    <td>Defines a description list</td>
-                </tr>
-                <tr>
-                    <td>&lt;dt&gt;</td>
-                    <td>term name in the list</td>
-                    <td>Defines a term/name in a description list</td>
-                </tr>
-                <tr>
-                    <td>&lt;dd&gt;</td>
-                    <td>term name of the list</td>
-                    <td>Defines a description of a term/name in a description list</td>
-                </tr>
-            </tbody>
-        </table>
-
-    </section>
-    <!-- end of section class table wrapper-->
-    <!--Footer details-->
-    <footer class="footer">
-        <p>&copy Signar Rasmussen 2021</p>
+    <!-- Footer -->
+    <footer>
+      <div class="content">
+        <span class="copyright">© 2016  Fotomatic, All Rights Reserved</span>
+        <span class="location">Designed in NYC</span>
+      </div>
     </footer>
-</body>
 
+  </div>
+</body>
 </html>
