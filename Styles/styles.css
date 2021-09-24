@@ -21,7 +21,76 @@ body {
     margin-top: 100px;
     color: rgb(212, 202, 202);
 }
+/* Navigation */
 
+#nav {
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*The overflow property controls what happens 
+  to content that is too big to fit into an area.*/
+    background-color: #5bccf6;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    color: #030e12;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*
+a:hover {
+    background-color: #fcde67;
+}
+*/
+a {
+    position: relative;
+    background: #7983ff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  a {
+    position: relative;
+  }
+  
+  a:before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, pink, transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+  
+  a:hover:before {
+    --size: 200px;
+  }
 
 /* Table */
 
@@ -73,43 +142,6 @@ body {
     font-size: 2rem;
 }
 
-
-/* Navigation */
-
-#nav {
-    position: fixed;
-    /* Set the navbar to fixed position */
-    top: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /*The overflow property controls what happens 
-  to content that is too big to fit into an area.*/
-    background-color: #5bccf6;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    padding: 14px 16px;
-    color: #030e12;
-    text-decoration: none;
-    text-align: center;
-}
-
-a:hover {
-    background-color: #fcde67;
-}
 
 
 /* Footer */
