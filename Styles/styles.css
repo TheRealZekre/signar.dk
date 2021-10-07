@@ -12,6 +12,7 @@ html {
 
 body {
     margin: 0px;
+    
 }
 
 
@@ -115,30 +116,59 @@ a:hover {
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:
     row-gap: 10px;
+    margin: 50px;
 }
 
 .one {
     padding: 50px;
     width: 50px;
+    height: 50px;
     border: 1px solid red;
-    }
+    background-image: url("../Pic/greenman.jpg");
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+
 .two {
     padding: 50px;
     width: 50px;
     border: 1px solid red;
+    background-image: url("../Pic/Bluehood.jpg");
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
 }
 .three {
     padding: 50px;
     width: 50px;
     border: 1px solid red;
+    background-image: url("../Pic/Dragon.jpg");
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
 }
 .four {
     padding: 50px;
     width: 50px;
     border: 1px solid red;
+    background-image: url("../Pic/Mega.jpg");
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat;
 }
+
+/* Deadend */
+
+.image {
+    margin-top: 150px;
+}
+
+
 /* Footer */
 
 .footer {
