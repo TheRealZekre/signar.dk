@@ -22,15 +22,75 @@ body {
     margin-top: 100px;
     color: rgb(212, 202, 202);
 }
-/* Navigation */
+/* The New navigation menu - borrowed from w3school */
+.navbar {
+    overflow: hidden;
+    background: #333;
+}
+/* Navigation links */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* The subnavigation menu */
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+/* Subnav button */
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+
+}
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+}
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+/* Style the subnav links */
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+
+/* Navigation commenting out the css for the old navigation
 
 #nav {
     position: fixed;
-    /* Set the navbar to fixed position */
+    /* Set the navbar to fixed position *
     top: 0;
-    /* Position the navbar at the top of the page */
+    /* Position the navbar at the top of the page *
     width: 100%;
-    /* Full width */
+    /* Full width *
 }
 
 ul {
@@ -39,7 +99,7 @@ ul {
     padding: 0;
     overflow: hidden;
     /*The overflow property controls what happens 
-  to content that is too big to fit into an area.*/
+  to content that is too big to fit into an area.*
     background-color: #5bccf6;
 }
 
@@ -59,7 +119,7 @@ li a {
 a:hover {
     background-color: #fcde67;
 }
-
+  end of comment for the old navigation css, this will be deleted if it is not needed anymore*/
 
 
 /* Table */
