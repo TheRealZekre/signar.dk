@@ -16,12 +16,27 @@ body {
 }
 
 
-/* Header section H1 */
+/* main */
+.main {
+    display: grid;
+    width: auto;
+    height: 300px;
+    grid-template-rows: repeat(3, 100px);
+
+}
+
+
+
+
+/* Header section H1 
 
 .sub-header {
     margin-top: 100px;
     color: rgb(212, 202, 202);
-}
+} */
+
+
+
 /* The New navigation menu - borrowed from w3school */
 .navbar {
     overflow: hidden;
@@ -232,6 +247,7 @@ a:hover {
 /* Footer */
 
 .footer {
+    grid-row: 100px;
     padding: 10px;
     color: rgb(212, 202, 202);
     border: 2px solid rgb(145, 144, 144);
